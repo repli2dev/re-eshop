@@ -1,0 +1,93 @@
+.subcats {
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #949494;
+}
+.product {
+	margin-top: 20px;
+	display: block;
+	width: 220px;
+	height: 200px;
+	float: left;
+	border: 1px solid #CDF2A8;
+	background: #F3FCEA;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.product h4 {
+	text-align: left;
+	margin: 5px;
+}
+.product h4 a {
+	text-decoration: none;
+}
+.product .matroska {
+	margin: 5px;
+}
+.product img,
+.eshop-detail img {
+	float: left;
+	border: 1px solid #CDF2A8;
+	margin-right: 5px;
+}
+.tip,
+.discount,
+.product .news,
+.eshop-detail .news {
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 10px; 
+}
+.order-buttons {
+	margin-top: 10px;
+	clear: both;
+}
+.eshop-detail .right{
+	float: right;
+	width: 590px;
+}
+table.cart,
+table.customers,
+table.manufacturers,
+table.payments,
+table.shippings {
+	width: 100%;
+}
+table.cart td,
+table.cart th {
+	border-left: 0px;
+	border-right: 0px;
+}
+div.cart_buttons{
+	text-align: center;
+}
+div.cart_buttons input {
+	float: none;
+}
+.overview1 {
+	width: 48%;
+	float: left;
+}
+.overview2 {
+	width:48%;
+	float: right;
+}
+.overview1 p,
+.overview2 p,
+.overview3 p {
+	margin-left: 20px;
+}
+table.customers td.none {
+	color: orange;
+	font-weight: bold;
+}
+table.customers td.done,
+table.customers td.paid {
+	color: green;
+	font-weight: bold;
+}
+table.customers td.cancel {
+	font-weight: bold;
+	color: red;
+}

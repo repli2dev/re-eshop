@@ -1,0 +1,26 @@
+# Turn on URL rewriting
+RewriteEngine On
+
+# Installation directory
+# Address http://www.example.com/re-eshop/ needs next line to be set to /re-eshop/
+# Adress http://www.example.com/re-eshop/ means you need set next line to /
+RewriteBase /
+
+# CSS, JS files and images should be accessable inside protected dirs 
+RewriteRule \.(css|js|jpg|png|gif|htm)$ - [NC,L]
+# Protect application and system files from being viewed
+RewriteRule ^(app|modules|libs) - [F,L]
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Allow these directories and files to be displayed directly:
+# - index.php (DO NOT FORGET THIS!)
+# - robots.txt
+# - favicon.ico
+# - Any file inside of the images/, js/, or css/ directories
+
+
+# Rewrite all other URLs to index.php/URL
+RewriteRule .* index.php/$0 [PT,L]
